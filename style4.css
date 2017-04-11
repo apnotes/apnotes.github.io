@@ -30,3 +30,7 @@
 	display: inline;
 	white-space: nowrap;
 }
+#content img{
+	height: 100px;
+	width: 100px;
+}
