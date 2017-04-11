@@ -19,7 +19,14 @@
 	position: fixed;
 	z-index: 10;
 	background-image: url("http://i.imgur.com/35Lun7R.jpg");
+	height: 90px;
 }
 #buttons {
 	float: right;
+}
+.title {
+	float: left;
+	margin-top: 25px;
+	display: inline;
+	white-space: nowrap;
 }
