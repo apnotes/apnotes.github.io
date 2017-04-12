@@ -18,7 +18,7 @@
 #dead {
 	position: fixed;
 	z-index: 10;
-	background-image: url("http://111wallpapers.com/wp-content/uploads/2016/09/Big-Earthquake-Wallpapers.jpg");
+	background-color: black;
 	height: 90px;
 }
 #buttons {
