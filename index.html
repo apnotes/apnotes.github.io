@@ -34,12 +34,14 @@
 	<img id="background" src="http://111wallpapers.com/wp-content/uploads/2016/09/Big-Earthquake-Wallpapers.jpg">
 </div>
 
-<md-card id="content" class="md-whiteframe-4dp">
+<md-card id="content" class="md-whiteframe-4dp" ng-controller="myController">
 <div id="supercontent">
 <h2>Earthquakes</h2>
 <p>Below this is just a sample/test video of an earthquake simulation. I do not own this video</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ucn2lZq5RMA" frameborder="0" allowfullscreen></iframe>
 <img src="http://111wallpapers.com/wp-content/uploads/2016/09/Destroyed-Cityscape-By-Earthquake-HD-Wallpapers.jpg">
+<jk-carousel data="ctrl.arrayData" item-template-url="'item-template.html'" max-width="700" max-height="400" >
+</jk-carousel>
 <p>Earthquakes are the violent shaking, movement, and tremors of the ground caused by movements of Earth's tectonic plates. Earthquakes are usually quite brief, but may repeat. The effect that earthquakes can have are quite devastating. </p>
 </div>
 </md-card>
