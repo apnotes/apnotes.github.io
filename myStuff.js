@@ -2,10 +2,10 @@ var app = angular.module("myApp", ["ngMaterial","jkAngularCarousel"]);
 app.controller("myController", function($scope){
 	$scope.arrayData = [
 		{src: "https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg"},
-		{src: "2.jpg"},
-		{src: "3.jpg"},
-		{src: "4.jpg"},
-		{src: "5.jpg"}
+		{src: "https://jpeg.org/images/jpeg-home.jpg"},
+		{src: "https://jpeg.org/images/jpeg2000-home.jpg"},
+		{src: "http://matthewebel.com/wp-content/uploads/2013/06/wpid-the-long-road1.jpeg"},
+		{src: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Cumulus_clouds_in_fair_weather.jpeg"}
 	];
 });
 app.run(function (){
