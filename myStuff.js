@@ -6,7 +6,7 @@ app.controller("myController", function($scope){
 		{src: "3.jpg"},
 		{src: "4.jpg"},
 		{src: "5.jpg"}
-	]
+	];
 });
 app.run(function (){
 	console.log("THis is running");
