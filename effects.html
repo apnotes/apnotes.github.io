@@ -37,6 +37,27 @@
     height: 400px;
 }
 </style>
+<script>
+	$(function(){
+		var interval;
+		var currentSlide = 1;
+		function startSlider(){
+			interval = setInterval(function(){
+				$('#picture-container').animate({'margin-left': '-=720'}, 1000, function(){
+					currentSlide++;
+					if (currentSlide === $slides.length){
+						currentSlide = 1;
+						('.pictures').css('margin-left', 0);
+					}
+				});
+			}, 3000);
+		}
+		function stopSlider(){
+			clearInterval(interval);	
+		}
+		$slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
+	});
+</script>
 </head>
 <body>
 <md-toolbar id="dead" class="md-whiteframe-4dp" layout="row">
