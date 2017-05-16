@@ -45,7 +45,7 @@
 			interval = setInterval(function(){
 				$('#picture-container').animate({'margin-left': '-=720'}, 1000, function(){
 					currentSlide++;
-					if (currentSlide === $('#picture-container').length){
+					if (currentSlide === $('.pictures').length){
 						currentSlide = 1;
 						('.pictures').css('margin-left', 0);
 					}
