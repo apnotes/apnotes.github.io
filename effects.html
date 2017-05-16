@@ -57,7 +57,7 @@
 		function stopSlider(){
 			clearInterval(interval);	
 		}
-		$('#slider').on('mouseenter', stopSlider).on('mouseleave', startSlider);
+		$('#slider').on('mouseenter', stopSlider).on('mouseleave', startSlider).on('click', startSlider);
 	});
 </script>
 </head>
@@ -76,6 +76,8 @@
 <md-button><a href="assessment.html">Cleanup & Prevention</a></md-button>
 </div>
 </md-toolbar>
+	<h1>Devastating Effects of earthquakes</h1>
+	<h3>Click to start the slideshow, hover over to stop the slide show, and leave to start the show</h3>
 <div id="container">
 	<div id="slider">
 		<ul id="picture-container">
