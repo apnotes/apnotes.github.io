@@ -64,7 +64,7 @@
 		function stopSlider(){
 			clearInterval(interval);	
 		}
-		$('#slider').on('mouseenter', stopSlider).on('mouseleave', startSlider).on('click', startSlider);
+		$('#slider').on('mouseenter', stopSlider).on('mouseleave', startSlider).on('click', stopSlider);
 	});
 </script>
 </head>
