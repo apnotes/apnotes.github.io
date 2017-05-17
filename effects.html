@@ -65,6 +65,7 @@
 			clearInterval(interval);	
 		}
 		$('#slider').on('mouseenter', stopSlider).on('mouseleave', startSlider).on('click', stopSlider);
+		$('#slider').on('dblclick', startSlider);
 	});
 </script>
 </head>
