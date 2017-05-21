@@ -25,7 +25,7 @@
 }
 #slider #picture-container {
     display: block;
-    width: 6000px;
+    width: 8000px;
     height: 50%;
     margin: 0;
     padding: 0;
@@ -59,7 +59,7 @@
 		var currentSlide = 1;
 		function startSlider(){
 			interval = setInterval(function(){
-				$('#picture-container').animate({'margin-left': '-2000'}, 1000, function(){
+				$('#picture-container').animate({'margin-left': '-=2000'}, 1000, function(){
 					currentSlide++;
 					if (currentSlide === $('.pictures').length){
 						currentSlide = 1;
