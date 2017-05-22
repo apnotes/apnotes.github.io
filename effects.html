@@ -49,8 +49,8 @@
 		background-color: lightblue;
 	}
 	img{
-		height: 1000px;
-		width: 2000px;
+		height: 800px;
+		width: 1000px;
 	}
 </style>
 <script>
@@ -59,7 +59,7 @@
 		var currentSlide = 1;
 		function startSlider(){
 			interval = setInterval(function(){
-				$('#picture-container').animate({'margin-left': '-=2000'}, 2000, function(){
+				$('#picture-container').animate({'margin-left': '-=1000'}, 3000, function(){
 					currentSlide++;
 					if (currentSlide === $('.pictures').length){
 						currentSlide = 1;
