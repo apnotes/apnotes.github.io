@@ -6,7 +6,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
 	<script src="myStuff.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script> 
-	
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="jk-carousel.js"></script>
 <script src="jk-carousel.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -18,61 +27,7 @@
 	  <link href="style4.css" rel="stylesheet"/>
 <style>
 
-#slider{
-    width: 1600px;
-    height: 800px;
-    overflow: hidden;
-}
-#slider #picture-container {
-    display: block;
-    width: 12000px;
-    height: 50%;
-    margin: 0;
-    padding: 0;
-}
-#slider .pictures{
-    float: left;
-    list-style-type: none;
-    width: 2000px;
-    height: 1000px;
-    margin-top: 100px;
-}
-#header{
-	position: relative;
-	top: 100px;
-}
-	#h3{
-		position: relative;
-		top: 100px;
-	}
-	body{
-		background-color: lightblue;
-	}
-	img{
-		height: 800px;
-		width: 1000px;
-	}
-</style>
-<script>
-	$(function(){
-		var interval;
-		var currentSlide = 1;
-		function startSlider(){
-			interval = setInterval(function(){
-				$('#picture-container').animate({'margin-left': '-=1000'}, 1000, function(){
-					currentSlide++;
-					if (currentSlide === $('.pictures').length){
-						currentSlide = 1;
-						$('#picture-container').css('margin-left', 0);
-					}
-				});
-			}, 2000);
-		}
-		function stopSlider(){
-			clearInterval(interval);	
-		}
-		$('#slider').on('mouseenter', stopSlider).on('mouseleave', startSlider).on('click', stopSlider).on('dblclick', startSlider);
-	});
+
 </script>
 </head>
 <body>
@@ -94,18 +49,53 @@
 <div id="container">
 	<h1 id="header">Devastating Effects of earthquakes</h1>
 	<h3 id="h3">Double click on the image to start the slideshow, or hover over or click to stop the slideshow, you can also move the mouse away from the photo to start the show again after you hover over it</h3>
-	<div id="slider">
-		<ul id="picture-container">
-			<li class="pictures"><img src="http://t1.daumcdn.net/brunch/service/user/278i/image/Lt4gVwPPvRVVyUWvBQiubDfldiU.jpg" /></li>
-			<li class="pictures"><img src="http://geology.isu.edu/wapi/EnvGeo/EG5_earthqks/images/tsunami.jpg" /></li>
-			<li class="pictures"><img src="http://www.opengeography.org/uploads/1/7/4/1/17412073/403600706.jpg?845" /></li>
-			<li class="pictures"><img src="https://s-media-cache-ak0.pinimg.com/originals/b0/5c/8c/b05c8c8950c71153078ce6b100074703.jpg" /></li>
-			<li class="pictures"><img src="http://answersafrica.com/wp-content/uploads/2015/05/Earthquake-e1431700006526.jpg" /></li>
-		</ul>
 	
-	</div>
 
-	
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://vignette4.wikia.nocookie.net/rio/images/9/91/Rio-2-Official-Trailer-3-40.jpg/revision/latest?cb=20131002062355" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Stonehenge.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 	
 	</div>
 
