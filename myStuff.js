@@ -1,4 +1,4 @@
-var app = angular.module("myApp", ["ngMaterial","jkAngularCarousel"]);
+var app = angular.module("myApp", ["ngMaterial"]);
 app.controller("myController", function($scope){
 	$scope.arrayData = [
 		{src: "https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg"},
